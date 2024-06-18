@@ -1,13 +1,12 @@
 package com.example.cart_service.dto;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
+import lombok.extern.jackson.Jacksonized;
 
 @Getter
-@RequiredArgsConstructor
-@SuperBuilder
+@Jacksonized
+@Builder
 @EqualsAndHashCode
 public class ProductDto {
     private final String name;

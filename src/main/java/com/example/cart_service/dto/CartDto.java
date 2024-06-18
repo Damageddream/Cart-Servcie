@@ -1,11 +1,13 @@
 package com.example.cart_service.dto;
 
+import com.example.cart_service.entity.CartItem;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
-import java.util.Map;
+import java.util.List;
+
 
 @Getter
 @RequiredArgsConstructor
@@ -13,6 +15,6 @@ import java.util.Map;
 @EqualsAndHashCode
 public class CartDto {
     private String uuid;
-    private Map<ProductDto, Integer> products;
+    private List<CartItem> products;
     private double totalPrice;
 }

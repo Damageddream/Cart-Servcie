@@ -9,6 +9,5 @@ import org.mapstruct.MappingTarget;
 public interface CartMapper {
     CartDto toCartDto(Cart cart);
     Cart toCart(CartDto cartDto);
-
     void updateCartFromDto(CartDto cartDto,@MappingTarget Cart cart);
 }
